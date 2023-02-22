@@ -99,6 +99,67 @@ nav ul li a {
   color: #fff;
 
   margin-bottom: 40px;
+  .cart {
+
+  border: 1px solid #ccc;
+
+  padding: 10px;
+
+  background-color: #f2f2f2;
+
+  width: 300px;
+
+  position: fixed;
+
+  top: 100px;
+
+  right: 20px;
+
+}
+
+.cart h2 {
+
+  margin-top: 0;
+
+}
+
+#cart-items {
+
+  list-style-type: none;
+
+  padding: 0;
+
+}
+
+#cart-items li {
+
+  margin-bottom: 10px;
+
+}
+
+#cart-items li span {
+
+  font-weight: bold;
+
+}
+
+#cart-total {
+
+  font-weight: bold;
+
+  text-align: right;
+
+  margin-top: 20px;
+
+}
+
+#checkout-btn {
+
+  display: block;
+
+  margin: 20px auto 0;
+
+}
 
 }
 
@@ -335,6 +396,15 @@ footer {
 			<li><a href="#">Contact</a></li>
 
 		</ul>
+		<div class="cart">
+  <h2>Shopping Cart</h2>
+  <ul id="cart-items">
+    <!-- Cart items will be added dynamically with JavaScript -->
+  </ul>
+  <p id="cart-total">Total: $0.00</p>
+  <button id="checkout-btn">Checkout</button>
+</div>
+
 
 	</nav>
 
